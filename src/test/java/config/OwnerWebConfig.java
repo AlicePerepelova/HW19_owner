@@ -9,10 +9,11 @@ import org.aeonbits.owner.Config;
 })
 public interface OwnerWebConfig extends Config {
   @Key("Browser")
-  @DefaultValue("edge")
+  @DefaultValue("chrome")
   String getBrowser();
 
   @Key("BrowserVersion")
+  @DefaultValue("133")
   String getBrowserVersion();
 
   @Key("BrowserSize")
@@ -24,5 +25,6 @@ public interface OwnerWebConfig extends Config {
   String getRemoteUrl();
 
   @Key("BaseUrl")
+  @DefaultValue("https://github.com")
   String getBaseUrl();
 }
